@@ -24,8 +24,11 @@
       function changeStyle2(elemnts)
       {
           var navVar = document.getElementById("navVar");
-          console.log(navVar.style.backgroundColor.toString())
-          navVar.style.backgroundColor = "#034f84"
+          if (navVar.style.backgroundColor = "#034f84")
+          {            
+            navVar.classList.remove("bg-dark");
+            navVar.style.backgroundColor = "#034f84!important";
+          } 
       }
 
       function changeStyle3()
